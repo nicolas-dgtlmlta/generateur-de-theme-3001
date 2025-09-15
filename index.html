@@ -3,116 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Description du site web">
-  <meta name="author" content="Nom de l'auteur">
-  <title>Titre du site - Description courte</title>
+  <title>Générateur de thème CSS 3001</title>
+  <meta name="description" content="Un générateur qui crée un thème CSS complet en oklch à partir d'une seule couleur.">
+  <meta name="author" content="Nicolas Rouleau">
+
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <meta name="color-scheme" content="light dark">
-  <meta name="format-detection" content="telephone=no">
   <meta property="og:title" content="Titre du site">
   <meta property="og:description" content="Description du site">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Titre du site">
   <meta name="twitter:description" content="Description du site">
-  <script type="module" src="scripts/main.js"></script>
+  
+  <!-- <script type="module" src="scripts/main.js"></script> -->
 </head>
 
 <body class="mainGrid">
 <header>
-  <nav aria-label="Navigation principale">
-    <div class="container">
-      <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-      
-      <div class="nav-brand">
-        <a href="/" aria-label="Accueil - Nom du site">
-          <img src="logo.svg" alt="Logo du site" width="120" height="40">
-        </a>
-      </div>
-      
-      <button class="nav-toggle" 
-      aria-label="Menu principal" 
-      aria-expanded="false" 
-      aria-controls="main-navigation">
-        <span class="hamburger"></span>
-      </button>
-    
-      <ul id="main-navigation" class="nav-menu">
-        <li><a href="/" aria-current="page">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+  <div class="twoPanels">
+    <div class="twoPanels-start">
+      <h1>Tu choisis une couleur, on te génère un thème</h1>
+      <p class="tagline">
+        Avec le Générateur de thème CSS 3001 <strong>sans AI</strong> — bien meilleur que le Générateur de thème CSS 3000 — on te crée un thème complet en oklch, parce qu’on est en 2025, après tout, à partir d'une seule couleur.
+      </p>
     </div>
-  </nav>
+  </div>
 </header>
 
-<main id="main-content" role="main">
-  <div class="container">
-    <h1>Titre principal de la page</h1>
-    
-    <section aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Introduction</h2>
-      <p>Ceci est un paragraphe d'introduction. Il devrait contenir une brève description du contenu de la page.</p>
-    </section>
-    
-    <section aria-labelledby="content-heading">
-      <h2 id="content-heading">Contenu principal</h2>
-      <p>Le contenu principal de votre page ira ici. Assurez-vous d'utiliser une structure hiérarchique appropriée avec des titres (h1, h2, h3, etc.) pour une meilleure accessibilité.</p>
-      
-      <article>
-        <h3>Sous-section 1</h3>
-        <p>Contenu de la première sous-section.</p>
-      </article>
-      
-      <article>
-        <h3>Sous-section 2</h3>
-        <p>Contenu de la deuxième sous-section.</p>
-      </article>
-    </section>
-  </div>
+<main>
 </main>
 
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <section aria-labelledby="contact-info">
-          <h2 id="contact-info" class="visually-hidden">Informations de contact</h2>
-          <address>
-            <p>Nom de l'organisation</p>
-            <p>123 Rue de l'Exemple</p>
-            <p>Ville, Code postal</p>
-            <p>Téléphone: <a href="tel:+1234567890">123-456-7890</a></p>
-            <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
-          </address>
-        </section>
-        
-        <nav aria-label="Liens rapides">
-          <h2 class="visually-hidden">Liens rapides</h2>
-          <ul>
-            <li><a href="/accessibility">Accessibilité</a></li>
-            <li><a href="/privacy">Politique de confidentialité</a></li>
-            <li><a href="/terms">Conditions d'utilisation</a></li>
-            <li><a href="/sitemap">Plan du site</a></li>
-          </ul>
-        </nav>
-        
-        <section aria-labelledby="social-media">
-          <h2 id="social-media" class="visually-hidden">Réseaux sociaux</h2>
-          <ul class="social-links">
-            <li><a href="https://facebook.com" aria-label="Facebook"><span aria-hidden="true">f</span></a></li>
-            <li><a href="https://twitter.com" aria-label="Twitter"><span aria-hidden="true">t</span></a></li>
-            <li><a href="https://linkedin.com" aria-label="LinkedIn"><span aria-hidden="true">in</span></a></li>
-          </ul>
-        </section>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Nom du site. Tous droits réservés.</p>
-        <p>Conforme aux <a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG 2.1</a> niveau AA</p>
-      </div>
-    </div>
-  </footer>
+<footer>
+</footer>
+
 </body>
 </html>
