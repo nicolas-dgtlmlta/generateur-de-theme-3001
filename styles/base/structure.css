@@ -1,0 +1,30 @@
+/** 
+ *  Utilisation des mêmes type scale que la typographie pour le calcul de progression fluide des mesures soit
+ *  1.2 pour les écrans < 1240px
+ *  1.333 pour les écrans >= 1240px
+ */
+
+:root {
+  /** Espacements principaux primitifs */
+  --sp-16-96: clamp(1rem, -1.027rem + 6.4865vw, 4rem);
+  --sp-16-48: clamp(1rem, -0.3514rem + 4.3243vw, 3rem);
+  --sp-16-24: clamp(1rem, 0.6622rem + 1.0811vw, 1.5rem);
+
+  
+  /** Grille principale */
+  --mainGridColumnCount: 12;
+  --mainGridGutterSize: var(--sp-16-96);
+  --mainGridGapSize: var(--sp-16-24);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: var(--mainGridGutterSize) repeat(var(--mainGridColumnCount), 1fr) var(--mainGridGutterSize);
+  gap: var(--mainGridGapSize);
+
+  > * {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+}
