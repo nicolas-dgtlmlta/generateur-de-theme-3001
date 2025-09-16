@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('../../fonts/RobotoFlex-VariableFont.woff2') format(woff2) tech(variations);
+  font-weight: 100 1000;
+}
+
+:root {
+  --fontFallback: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --robotFlex: 'Roboto Flex', var(--fontFallback);
+  /** Variables utilisées pour générer les valeurs primitives
+  * Petits écrans (<= 500px) : ratio 1.2, base 16px
+  * Grands écrans (>= 1240px) : ratio 1.333, base 20px
+  * 
+  */
+
+  --fs--2: clamp(0.7813rem, 0.7387rem + 0.136vw, 0.8442rem);
+  --fs--1: clamp(0.9375rem, 0.8106rem + 0.406vw, 1.1253rem);
+  --fs-0: clamp(1.125rem, 0.8716rem + 0.8108vw, 1.5rem);
+  --fs-1: clamp(1.35rem, 0.9111rem + 1.4043vw, 1.9995rem);
+  --fs-2: clamp(1.62rem, 0.9137rem + 2.2602vw, 2.6653rem);
+  --fs-3: clamp(1.944rem, 0.8569rem + 3.4787vw, 3.5529rem);
+  --fs-4: clamp(2.3328rem, 0.709rem + 5.1961vw, 4.736rem);
+  --fs-5: clamp(2.7994rem, 0.4252rem + 7.5973vw, 6.3131rem);
+  --fs-ultra: clamp(3rem, -1.0541rem + 12.973vw, 9rem);
+
+  /* Variables pour font-variation-settings - valeurs de base du body */
+  --fvs-wght: 400;
+  --fvs-wdth: 122.02;
+  --fvs-opsz: 48.8;
+  --fvs-grad: 34.5;
+  --fvs-slnt: 0;
+  --fvs-xtra: 387.4;
+  --fvs-xopq: 136.52;
+  --fvs-yopq: 72.3;
+  --fvs-ytlc: 554.6;
+  --fvs-ytuc: 676.48;
+  --fvs-ytas: 694.1;
+  --fvs-ytde: -199.43;
+  --fvs-ytfi: 724.16;
+
+
+
+  body {
+    font-family: var(--robotFlex);
+    font-size: var(--fs-0);
+    font-variation-settings: "wght" var(--fvs-wght), "wdth" var(--fvs-wdth), "opsz" var(--fvs-opsz), "GRAD" var(--fvs-grad), "slnt" var(--fvs-slnt), "XTRA" var(--fvs-xtra), "XOPQ" var(--fvs-xopq), "YOPQ" var(--fvs-yopq), "YTLC" var(--fvs-ytlc), "YTUC" var(--fvs-ytuc), "YTAS" var(--fvs-ytas), "YTDE" var(--fvs-ytde), "YTFI" var(--fvs-ytfi);
+    line-height: 1.5;
+  }
+
+  :read-only {
+    font-variation-settings: "wght" var(--fvs-wght), "wdth" var(--fvs-wdth), "opsz" var(--fvs-opsz), "GRAD" var(--fvs-grad), "slnt" var(--fvs-slnt), "XTRA" var(--fvs-xtra), "XOPQ" var(--fvs-xopq), "YOPQ" var(--fvs-yopq), "YTLC" var(--fvs-ytlc), "YTUC" var(--fvs-ytuc), "YTAS" var(--fvs-ytas), "YTDE" var(--fvs-ytde), "YTFI" var(--fvs-ytfi);
+  }
+
+  strong {
+    --fvs-wght: 600;
+  }
+  
+  .headingUltra {
+    --fvs-wght: 919;
+    --fvs-wdth: 124.54;
+    --fvs-opsz: 63.76;
+    --fvs-slnt: -2;
+    --fvs-xtra: 432.2;
+    --fvs-xopq: 72.88;
+    --fvs-yopq: 47;
+    --fvs-ytlc: 499.16;
+    --fvs-ytuc: 690.4;
+    --fvs-ytde: -215.99;
+    font-family: var(--robotFlex);
+    font-size: var(--fs-ultra);
+    letter-spacing: -4%;
+    line-height: 0.9;
+  }
+}
