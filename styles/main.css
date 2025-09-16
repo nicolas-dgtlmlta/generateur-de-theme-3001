@@ -1,2 +1,4 @@
-@import "base/structure.css";
-@import "base/typography.css";
+@layer resets, application, themes, components, utilities, state, overrides;
+
+@import "base/structure.css" layer(application);
+@import "base/typography.css" layer(application);
