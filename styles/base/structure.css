@@ -1,6 +1,6 @@
 /** 
  *  Utilisation des mêmes type scale que la typographie pour le calcul de progression fluide des mesures soit
- *  1.2 pour les écrans < 1240px
+ *  1.2 pour les écrans < 500px
  *  1.333 pour les écrans >= 1240px
  */
 
@@ -22,9 +22,23 @@
   grid-template-columns: var(--mainGridGutterSize) repeat(var(--mainGridColumnCount), 1fr) var(--mainGridGutterSize);
   gap: var(--mainGridGapSize);
 
-  > * {
+  > *:not(script) {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: subgrid;
+  }
+}
+
+.twoPanels {
+  grid-column: 2 / -2;
+  display: grid;
+  grid-template-columns: subgrid;
+
+  > :nth-child(1) {
+    grid-column: 1 / span calc(var(--mainGridColumnCount) / 2);
+  }
+  
+  @container (inline-size >= 900px) {
+    grid-template-columns: 1fr;
   }
 }
