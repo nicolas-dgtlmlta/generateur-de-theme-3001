@@ -2,3 +2,4 @@
 
 @import "base/structure.css" layer(application);
 @import "base/typography.css" layer(application);
+@import "themes/theme-main-generated.css" layer(themes);

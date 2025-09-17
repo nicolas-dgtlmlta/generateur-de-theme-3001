@@ -7,6 +7,8 @@
 :root {
   --fontFallback: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --robotFlex: 'Roboto Flex', var(--fontFallback);
+
+  
   /** Variables utilisées pour générer les valeurs primitives
   * Petits écrans (<= 500px) : ratio 1.2, base 16px
   * Grands écrans (>= 1240px) : ratio 1.333, base 20px

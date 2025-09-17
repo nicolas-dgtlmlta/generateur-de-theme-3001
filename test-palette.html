@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Palette Primaire Sarcelle</title>
+    <link rel="stylesheet" href="styles/base/theme.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2 {
+            margin-top: 0;
+        }
+        
+        .palette-section {
+            margin-bottom: 40px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .color-swatch {
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 8px;
+            color: var(--text);
+            font-size: 12px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+        
+        .color-swatch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .demo-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .demo-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--surface-light);
+            border: 1px solid var(--border);
+        }
+        
+        .demo-card h3 {
+            margin-top: 0;
+            color: var(--primary-text);
+        }
+        
+        .demo-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background: var(--primary-accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-600);
+        }
+        
+        .btn-secondary {
+            background: var(--primary-bg);
+            color: var(--primary-text);
+            border: 1px solid var(--primary-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-bg-light);
+        }
+        
+        .btn-accent {
+            background: var(--primary-accent);
+            color: white;
+        }
+        
+        .btn-accent:hover {
+            background: var(--primary-600);
+        }
+        
+        .btn-pastel {
+            background: var(--primary-pastel);
+            color: var(--primary-text);
+            border: 1px solid var(--primary-border-light);
+        }
+        
+        .btn-pastel:hover {
+            background: var(--primary-bg-light);
+        }
+        
+        .text-demo {
+            margin-bottom: 20px;
+        }
+        
+        .text-demo p {
+            margin: 5px 0;
+        }
+        
+        .text-primary { color: var(--primary-text); }
+        .text-primary-light { color: var(--primary-text-light); }
+        .text-primary-strong { color: var(--primary-text-strong); }
+        
+        .bg-demo {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .bg-primary-subtle { background: var(--primary-bg-subtle); }
+        .bg-primary-light { background: var(--primary-bg-light); }
+        .bg-primary { background: var(--primary-bg); }
+        
+        .border-demo {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .border-primary-light { border: 2px solid var(--primary-border-light); }
+        .border-primary { border: 2px solid var(--primary-border); }
+        
+        .header-demo {
+            background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .header-demo h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        
+        .header-demo p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Palette Primaire Sarcelle (Teal)</h1>
+        <p>Teinte: 200 | Cyan-bleu vibrant</p>
+        
+        <div class="palette-section">
+            <h2>Palette Complète 50-950</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background: var(--primary-50); color: var(--primary-text-strong);">50</div>
+                <div class="color-swatch" style="background: var(--primary-100); color: var(--primary-text-strong);">100</div>
+                <div class="color-swatch" style="background: var(--primary-150); color: var(--primary-text-strong);">150</div>
+                <div class="color-swatch" style="background: var(--primary-200); color: var(--primary-text-strong);">200</div>
+                <div class="color-swatch" style="background: var(--primary-250); color: var(--primary-text-strong);">250</div>
+                <div class="color-swatch" style="background: var(--primary-300); color: var(--primary-text-strong);">300</div>
+                <div class="color-swatch" style="background: var(--primary-350); color: var(--primary-text-strong);">350</div>
+                <div class="color-swatch" style="background: var(--primary-400); color: white;">400</div>
+                <div class="color-swatch" style="background: var(--primary-450); color: white;">450</div>
+                <div class="color-swatch" style="background: var(--primary-500); color: white;">500</div>
+                <div class="color-swatch" style="background: var(--primary-550); color: white;">550</div>
+                <div class="color-swatch" style="background: var(--primary-600); color: white;">600</div>
+                <div class="color-swatch" style="background: var(--primary-650); color: white;">650</div>
+                <div class="color-swatch" style="background: var(--primary-700); color: white;">700</div>
+                <div class="color-swatch" style="background: var(--primary-750); color: white;">750</div>
+                <div class="color-swatch" style="background: var(--primary-800); color: white;">800</div>
+                <div class="color-swatch" style="background: var(--primary-850); color: white;">850</div>
+                <div class="color-swatch" style="background: var(--primary-900); color: white;">900</div>
+                <div class="color-swatch" style="background: var(--primary-950); color: white;">950</div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Alias Sémantiques</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background: var(--primary-lightest); color: var(--primary-text-strong);">lightest</div>
+                <div class="color-swatch" style="background: var(--primary-light); color: var(--primary-text-strong);">light</div>
+                <div class="color-swatch" style="background: var(--primary-lighter); color: var(--primary-text-strong);">lighter</div>
+                <div class="color-swatch" style="background: var(--primary); color: white;">primary</div>
+                <div class="color-swatch" style="background: var(--primary-darker); color: white;">darker</div>
+                <div class="color-swatch" style="background: var(--primary-dark); color: white;">dark</div>
+                <div class="color-swatch" style="background: var(--primary-darkest); color: white;">darkest</div>
+            </div>
+        </div>
+        
+        <div class="header-demo">
+            <h2>Application moderne</h2>
+            <p>Utilisation de la palette primaire sarcelle</p>
+        </div>
+        
+        <div class="demo-section">
+            <div class="demo-card">
+                <h3>Variantes de boutons</h3>
+                <button class="demo-button btn-primary">Bouton Principal</button>
+                <button class="demo-button btn-secondary">Bouton Secondaire</button>
+                <button class="demo-button btn-accent">Accent</button>
+                <button class="demo-button btn-pastel">Pastel</button>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Textes colorés</h3>
+                <div class="text-demo">
+                    <p class="text-primary">Texte primaire standard</p>
+                    <p class="text-primary-light">Texte primaire clair</p>
+                    <p class="text-primary-strong">Texte primaire fort</p>
+                </div>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Arrière-plans</h3>
+                <div class="bg-demo bg-primary-subtle">Arrière-plan subtil</div>
+                <div class="bg-demo bg-primary-light">Arrière-plan clair</div>
+                <div class="bg-demo bg-primary">Arrière-plan standard</div>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Bordures</h3>
+                <div class="border-demo border-primary-light">Bordure claire</div>
+                <div class="border-demo border-primary">Bordure standard</div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Variantes dynamiques (OKLCH)</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background: var(--primary-accent); color: white;">accent</div>
+                <div class="color-swatch" style="background: var(--primary-pastel); color: var(--primary-text);">pastel</div>
+                <div class="color-swatch" style="background: var(--primary-muted); color: var(--primary-text);">muted</div>
+                <div class="color-swatch" style="background: var(--primary-lighter-oklch); color: var(--primary-text);">lighter</div>
+                <div class="color-swatch" style="background: var(--primary-darker-oklch); color: white;">darker</div>
+                <div class="color-swatch" style="background: var(--primary-dark-mode); color: white;">dark mode</div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Contrôle de saturation</h2>
+            <p>Modifiez <code>--primary-chroma-multiplier</code> pour ajuster la saturation globale :</p>
+            <div class="color-grid">
+                <div class="color-swatch" style="--primary-chroma-multiplier: 0.5; background: var(--primary-500); color: white;">50% saturation</div>
+                <div class="color-swatch" style="--primary-chroma-multiplier: 0.8; background: var(--primary-500); color: white;">80% saturation</div>
+                <div class="color-swatch" style="--primary-chroma-multiplier: 1.2; background: var(--primary-500); color: white;">120% saturation</div>
+                <div class="color-swatch" style="--primary-chroma-multiplier: 1.5; background: var(--primary-500); color: white;">150% saturation</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
