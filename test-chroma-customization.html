@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de personnalisation des chromas</title>
+    <link rel="stylesheet" href="styles/base/theme-generated.css">
+    <style>
+        /* Exemple de personnalisation des chromas */
+        .custom-chroma {
+            /* Augmenter la chromaticité de la palette primaire */
+            --primary-chroma-base: 0.25;
+            --primary-chroma-multiplier: 1.2;
+            
+            /* Réduire la chromaticité de la palette secondaire */
+            --secondary-chroma-base: 0.08;
+            --secondary-chroma-multiplier: 0.8;
+            
+            /* Palette grise avec plus de chromaticité */
+            --gray-chroma-base: 0.03;
+            --gray-chroma-multiplier: 1.5;
+        }
+        
+        /* Styles de démonstration */
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de personnalisation des chromas</h1>
+    
+    <div class="section">
+        <h2>Palette par défaut</h2>
+        <div class="color-box" style="background-color: var(--primary-500);"></div>
+        <div class="color-box" style="background-color: var(--secondary-500);"></div>
+        <div class="color-box" style="background-color: var(--tertiary-500);"></div>
+        <div class="color-box" style="background-color: var(--gray-500);"></div>
+    </div>
+    
+    <div class="section custom-chroma">
+        <h2>Palette avec chromas personnalisés</h2>
+        <div class="color-box" style="background-color: var(--primary-500);"></div>
+        <div class="color-box" style="background-color: var(--secondary-500);"></div>
+        <div class="color-box" style="background-color: var(--tertiary-500);"></div>
+        <div class="color-box" style="background-color: var(--gray-500);"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Valeurs de chroma utilisées</h2>
+        <p><strong>Par défaut:</strong></p>
+        <ul>
+            <li>Primaire: --primary-chroma-base: 0.15, --primary-chroma-multiplier: 1</li>
+            <li>Secondaire: --secondary-chroma-base: 0.15, --secondary-chroma-multiplier: 1</li>
+            <li>Gris: --gray-chroma-base: 0.01, --gray-chroma-multiplier: 1</li>
+        </ul>
+        
+        <p><strong>Personnalisé:</strong></p>
+        <ul>
+            <li>Primaire: --primary-chroma-base: 0.25, --primary-chroma-multiplier: 1.2</li>
+            <li>Secondaire: --secondary-chroma-base: 0.08, --secondary-chroma-multiplier: 0.8</li>
+            <li>Gris: --gray-chroma-base: 0.03, --gray-chroma-multiplier: 1.5</li>
+        </ul>
+    </div>
+</body>
+</html>

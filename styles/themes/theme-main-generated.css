@@ -1,0 +1,323 @@
+:root, .nested-palette {
+  --lightness-formula-0: 99.7%;
+  --lightness-formula-50: 98.5%;
+  --lightness-formula-100: 95%;
+  --lightness-formula-200: 88%;
+  --lightness-formula-300: 67.67135%;
+  --lightness-formula-400: 60.53134%;
+  --lightness-formula-500: 53.68106%;
+  --lightness-formula-600: 47.1735%;
+  --lightness-formula-700: 41.05896%;
+  --lightness-formula-800: 25%;
+  --lightness-formula-900: 15%;
+  --lightness-formula-950: 8%;
+  --step-multiplier: 0.056;
+  --gray-chroma-base: 0.01;
+  --gray-hue: var(--primary-hue);
+  --gray-chroma-formula-0: calc(0.32 * var(--gray-chroma-base));
+  --gray-chroma-formula-50: calc(0.43 * var(--gray-chroma-base));
+  --gray-chroma-formula-100: calc(0.55 * var(--gray-chroma-base));
+  --gray-chroma-formula-200: calc(0.66 * var(--gray-chroma-base));
+  --gray-chroma-formula-300: calc(0.77 * var(--gray-chroma-base));
+  --gray-chroma-formula-400: calc(0.89 * var(--gray-chroma-base));
+  --gray-chroma-formula-500: calc(1.00 * var(--gray-chroma-base));
+  --gray-chroma-formula-600: calc(0.86 * var(--gray-chroma-base));
+  --gray-chroma-formula-700: calc(0.73 * var(--gray-chroma-base));
+  --gray-chroma-formula-800: calc(0.59 * var(--gray-chroma-base));
+  --gray-chroma-formula-900: calc(0.46 * var(--gray-chroma-base));
+  --gray-chroma-formula-950: calc(0.32 * var(--gray-chroma-base));
+  --gray-0: oklch(var(--lightness-formula-0) var(--gray-chroma-formula-0) var(--gray-hue));
+  --gray-50: oklch(var(--lightness-formula-50) var(--gray-chroma-formula-50) var(--gray-hue));
+  --gray-100: oklch(var(--lightness-formula-100) var(--gray-chroma-formula-100) var(--gray-hue));
+  --gray-200: oklch(var(--lightness-formula-200) var(--gray-chroma-formula-200) var(--gray-hue));
+  --gray-300: oklch(var(--lightness-formula-300) var(--gray-chroma-formula-300) var(--gray-hue));
+  --gray-400: oklch(var(--lightness-formula-400) var(--gray-chroma-formula-400) var(--gray-hue));
+  --gray-500: oklch(var(--lightness-formula-500) var(--gray-chroma-formula-500) var(--gray-hue));
+  --gray-600: oklch(var(--lightness-formula-600) var(--gray-chroma-formula-600) var(--gray-hue));
+  --gray-700: oklch(var(--lightness-formula-700) var(--gray-chroma-formula-700) var(--gray-hue));
+  --gray-800: oklch(var(--lightness-formula-800) var(--gray-chroma-formula-800) var(--gray-hue));
+  --gray-900: oklch(var(--lightness-formula-900) var(--gray-chroma-formula-900) var(--gray-hue));
+  --gray-950: oklch(var(--lightness-formula-950) var(--gray-chroma-formula-950) var(--gray-hue));
+  --primary-chroma-base: 0.15;
+  --primary-chroma-formula-0: calc(0.32 * var(--primary-chroma-base));
+  --primary-chroma-formula-50: calc(0.43 * var(--primary-chroma-base));
+  --primary-chroma-formula-100: calc(0.55 * var(--primary-chroma-base));
+  --primary-chroma-formula-200: calc(0.66 * var(--primary-chroma-base));
+  --primary-chroma-formula-300: calc(0.77 * var(--primary-chroma-base));
+  --primary-chroma-formula-400: calc(0.89 * var(--primary-chroma-base));
+  --primary-chroma-formula-500: calc(1.00 * var(--primary-chroma-base));
+  --primary-chroma-formula-600: calc(0.86 * var(--primary-chroma-base));
+  --primary-chroma-formula-700: calc(0.73 * var(--primary-chroma-base));
+  --primary-chroma-formula-800: calc(0.59 * var(--primary-chroma-base));
+  --primary-chroma-formula-900: calc(0.46 * var(--primary-chroma-base));
+  --primary-chroma-formula-950: calc(0.32 * var(--primary-chroma-base));
+  --primary-0: oklch(var(--lightness-formula-0) var(--primary-chroma-formula-0) var(--primary-hue));
+  --primary-50: oklch(var(--lightness-formula-50) var(--primary-chroma-formula-50) var(--primary-hue));
+  --primary-100: oklch(var(--lightness-formula-100) var(--primary-chroma-formula-100) var(--primary-hue));
+  --primary-200: oklch(var(--lightness-formula-200) var(--primary-chroma-formula-200) var(--primary-hue));
+  --primary-300: oklch(var(--lightness-formula-300) var(--primary-chroma-formula-300) var(--primary-hue));
+  --primary-400: oklch(var(--lightness-formula-400) var(--primary-chroma-formula-400) var(--primary-hue));
+  --primary-500: oklch(var(--lightness-formula-500) var(--primary-chroma-formula-500) var(--primary-hue));
+  --primary-600: oklch(var(--lightness-formula-600) var(--primary-chroma-formula-600) var(--primary-hue));
+  --primary-700: oklch(var(--lightness-formula-700) var(--primary-chroma-formula-700) var(--primary-hue));
+  --primary-800: oklch(var(--lightness-formula-800) var(--primary-chroma-formula-800) var(--primary-hue));
+  --primary-900: oklch(var(--lightness-formula-900) var(--primary-chroma-formula-900) var(--primary-hue));
+  --primary-950: oklch(var(--lightness-formula-950) var(--primary-chroma-formula-950) var(--primary-hue));
+  --secondary-chroma-base: 0.15;
+  --secondary-chroma-formula-0: calc(0.32 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-50: calc(0.43 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-100: calc(0.55 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-200: calc(0.66 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-300: calc(0.77 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-400: calc(0.89 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-500: calc(1.00 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-600: calc(0.86 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-700: calc(0.73 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-800: calc(0.59 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-900: calc(0.46 * var(--secondary-chroma-base));
+  --secondary-chroma-formula-950: calc(0.32 * var(--secondary-chroma-base));
+  --secondary-0: oklch(var(--lightness-formula-0) var(--secondary-chroma-formula-0) var(--secondary-hue));
+  --secondary-50: oklch(var(--lightness-formula-50) var(--secondary-chroma-formula-50) var(--secondary-hue));
+  --secondary-100: oklch(var(--lightness-formula-100) var(--secondary-chroma-formula-100) var(--secondary-hue));
+  --secondary-200: oklch(var(--lightness-formula-200) var(--secondary-chroma-formula-200) var(--secondary-hue));
+  --secondary-300: oklch(var(--lightness-formula-300) var(--secondary-chroma-formula-300) var(--secondary-hue));
+  --secondary-400: oklch(var(--lightness-formula-400) var(--secondary-chroma-formula-400) var(--secondary-hue));
+  --secondary-500: oklch(var(--lightness-formula-500) var(--secondary-chroma-formula-500) var(--secondary-hue));
+  --secondary-600: oklch(var(--lightness-formula-600) var(--secondary-chroma-formula-600) var(--secondary-hue));
+  --secondary-700: oklch(var(--lightness-formula-700) var(--secondary-chroma-formula-700) var(--secondary-hue));
+  --secondary-800: oklch(var(--lightness-formula-800) var(--secondary-chroma-formula-800) var(--secondary-hue));
+  --secondary-900: oklch(var(--lightness-formula-900) var(--secondary-chroma-formula-900) var(--secondary-hue));
+  --secondary-950: oklch(var(--lightness-formula-950) var(--secondary-chroma-formula-950) var(--secondary-hue));
+  --tertiary-chroma-base: 0.15;
+  --tertiary-chroma-formula-0: calc(0.32 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-50: calc(0.43 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-100: calc(0.55 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-200: calc(0.66 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-300: calc(0.77 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-400: calc(0.89 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-500: calc(1.00 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-600: calc(0.86 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-700: calc(0.73 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-800: calc(0.59 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-900: calc(0.46 * var(--tertiary-chroma-base));
+  --tertiary-chroma-formula-950: calc(0.32 * var(--tertiary-chroma-base));
+  --tertiary-0: oklch(var(--lightness-formula-0) var(--tertiary-chroma-formula-0) var(--tertiary-hue));
+  --tertiary-50: oklch(var(--lightness-formula-50) var(--tertiary-chroma-formula-50) var(--tertiary-hue));
+  --tertiary-100: oklch(var(--lightness-formula-100) var(--tertiary-chroma-formula-100) var(--tertiary-hue));
+  --tertiary-200: oklch(var(--lightness-formula-200) var(--tertiary-chroma-formula-200) var(--tertiary-hue));
+  --tertiary-300: oklch(var(--lightness-formula-300) var(--tertiary-chroma-formula-300) var(--tertiary-hue));
+  --tertiary-400: oklch(var(--lightness-formula-400) var(--tertiary-chroma-formula-400) var(--tertiary-hue));
+  --tertiary-500: oklch(var(--lightness-formula-500) var(--tertiary-chroma-formula-500) var(--tertiary-hue));
+  --tertiary-600: oklch(var(--lightness-formula-600) var(--tertiary-chroma-formula-600) var(--tertiary-hue));
+  --tertiary-700: oklch(var(--lightness-formula-700) var(--tertiary-chroma-formula-700) var(--tertiary-hue));
+  --tertiary-800: oklch(var(--lightness-formula-800) var(--tertiary-chroma-formula-800) var(--tertiary-hue));
+  --tertiary-900: oklch(var(--lightness-formula-900) var(--tertiary-chroma-formula-900) var(--tertiary-hue));
+  --tertiary-950: oklch(var(--lightness-formula-950) var(--tertiary-chroma-formula-950) var(--tertiary-hue));
+  --surface-lightest: var(--gray-0);
+  --surface-lighter: var(--gray-50);
+  --surface-light: var(--gray-100);
+  --surface: var(--gray-200);
+  --surface-dark: var(--gray-300);
+  --text-subtle: var(--gray-400);
+  --text-muted: var(--gray-500);
+  --text: var(--gray-900);
+  --text-strong: var(--gray-900);
+  --border-light: var(--gray-200);
+  --border: var(--gray-300);
+  --border-dark: var(--gray-400);
+  --primary-lightest: var(--primary-50);
+  --primary-light: var(--primary-100);
+  --primary-lighter: var(--primary-200);
+  --primary: var(--primary-500);
+  --primary-darker: var(--primary-700);
+  --primary-dark: var(--primary-800);
+  --primary-darkest: var(--primary-950);
+  --secondary-lightest: var(--secondary-50);
+  --secondary-light: var(--secondary-100);
+  --secondary-lighter: var(--secondary-200);
+  --secondary: var(--secondary-500);
+  --secondary-darker: var(--secondary-700);
+  --secondary-dark: var(--secondary-800);
+  --secondary-darkest: var(--secondary-950);
+  --tertiary-lightest: var(--tertiary-50);
+  --tertiary-light: var(--tertiary-100);
+  --tertiary-lighter: var(--tertiary-200);
+  --tertiary: var(--tertiary-500);
+  --tertiary-darker: var(--tertiary-700);
+  --tertiary-dark: var(--tertiary-800);
+  --tertiary-darkest: var(--tertiary-950);
+}
+
+/* ================================================
+   Palette de Couleurs OKLCH - Configuration
+   ================================================
+   Ce fichier configure les palettes de couleurs
+   Les variables sont générées automatiquement par PostCSS
+   ================================================ */
+
+:root {
+  /* ================================================
+     Configuration des types d'agencement de couleurs
+     ================================================ */
+  
+  /* Modificateurs de couleur pour différents types d'agencement */
+  --secondary-color-modifier: 120;  /* Triadique : 120° */
+  --tertiary-color-modifier: 240;   /* Triadique : 240° */
+  
+  /* Autres configurations possibles : */
+  /* Complémentaire : --secondary-color-modifier: 180; --tertiary-color-modifier: 30; */
+  /* Complémentaire divisé : --secondary-color-modifier: 150; --tertiary-color-modifier: 210; */
+  /* Analogue : --secondary-color-modifier: 30; --tertiary-color-modifier: 60; */
+  
+  /* ================================================
+     Configuration des palettes de couleurs
+     ================================================ */
+  
+  /* Palette Primaire Sarcelle (Teal) */
+  --primary-hue: 200;
+  --primary-chroma-base: 0.15;
+  --primary-chroma-multiplier: 1;
+  
+  /* Palette Secondaire (calculée dynamiquement) */
+  --secondary-hue: calc(var(--primary-hue) + var(--secondary-color-modifier));
+  --secondary-chroma-base: 0.15;
+  --secondary-chroma-multiplier: 1;
+  
+  /* Palette Tertiaire (calculée dynamiquement) */
+  --tertiary-hue: calc(var(--primary-hue) + var(--tertiary-color-modifier));
+  --tertiary-chroma-base: 0.15;
+  --tertiary-chroma-multiplier: 1;
+  
+  /* ================================================
+     Configuration des teintes de gris
+     ================================================ */
+  
+  /* Teinte de base pour les gris (optionnelle) */
+  /* Décommentez pour créer des variations teintées */
+  /* --gray-hue: 210; */ /* Bleu-gris */
+  /* --gray-hue: 120; */ /* Vert-gris */
+  /* --gray-hue: 270; */ /* Violet-gris */
+  /* --gray-hue: 30; */  /* Chaud */
+  
+  /* ================================================
+     Configuration des multiplicateurs
+     ================================================ */
+  
+  --step-multiplier: 0.056;
+}
+
+/* ================================================
+   Utilisation avec les couleurs relatives
+   Exemples de modifications dynamiques
+   ================================================ */
+
+@supports (color: oklch(from red l c h)) {
+  :root {
+    /* Variation de luminosité basée sur une couleur de base */
+    --gray-base: oklch(50% 0.01 var(--gray-hue));
+    
+    /* Créer des variations avec les couleurs relatives */
+    --gray-lighter: oklch(from var(--gray-base) calc(l * 1.2) c h);
+    --gray-darker: oklch(from var(--gray-base) calc(l * 0.8) c h);
+    
+    /* Augmenter la saturation pour l'accent */
+    --gray-accent: oklch(from var(--gray-500) l calc(c * 3) h);
+    
+    /* Variations pour la palette primaire sarcelle */
+    --primary-base: oklch(50% 0.20 var(--primary-hue));
+    
+    /* Variantes de luminosité */
+    --primary-lighter-oklch: oklch(from var(--primary-base) calc(l * 1.3) c h);
+    --primary-darker-oklch: oklch(from var(--primary-base) calc(l * 0.7) c h);
+    
+    /* Variantes de saturation (accent et pastel) */
+    --primary-accent: oklch(from var(--primary-500) l calc(c * 1.5) h);
+    --primary-pastel: oklch(from var(--primary-200) l calc(c * 0.5) h);
+    --primary-muted: oklch(from var(--primary-500) l calc(c * 0.6) h);
+    
+    /* Version foncée pour le mode sombre */
+    --primary-dark-mode: oklch(from var(--primary-700) calc(l * 0.9) calc(c * 0.8) h);
+    
+    /* Variations pour la palette secondaire rose */
+    --secondary-base: oklch(50% 0.20 var(--secondary-hue));
+    
+    /* Variantes de luminosité pour la secondaire */
+    --secondary-lighter-oklch: oklch(from var(--secondary-base) calc(l * 1.3) c h);
+    --secondary-darker-oklch: oklch(from var(--secondary-base) calc(l * 0.7) c h);
+    
+    /* Variantes de saturation pour la secondaire (accent et pastel) */
+    --secondary-accent: oklch(from var(--secondary-500) l calc(c * 1.5) h);
+    --secondary-pastel: oklch(from var(--secondary-200) l calc(c * 0.5) h);
+    --secondary-muted: oklch(from var(--secondary-500) l calc(c * 0.6) h);
+    
+    /* Version foncée pour la secondaire en mode sombre */
+    --secondary-dark-mode: oklch(from var(--secondary-700) calc(l * 0.9) calc(c * 0.8) h);
+    
+    /* Variations pour la palette tertiaire jaune/vert */
+    --tertiary-base: oklch(50% 0.20 var(--tertiary-hue));
+    
+    /* Variantes de luminosité pour la tertiaire */
+    --tertiary-lighter-oklch: oklch(from var(--tertiary-base) calc(l * 1.3) c h);
+    --tertiary-darker-oklch: oklch(from var(--tertiary-base) calc(l * 0.7) c h);
+    
+    /* Variantes de saturation pour la tertiaire (accent et pastel) */
+    --tertiary-accent: oklch(from var(--tertiary-500) l calc(c * 1.5) h);
+    --tertiary-pastel: oklch(from var(--tertiary-200) l calc(c * 0.5) h);
+    --tertiary-muted: oklch(from var(--tertiary-500) l calc(c * 0.6) h);
+    
+    /* Version foncée pour la tertiaire en mode sombre */
+    --tertiary-dark-mode: oklch(from var(--tertiary-700) calc(l * 0.9) calc(c * 0.8) h);
+    
+    /* Couleurs complémentaires et harmonieuses */
+    /* Mélange de primaire et secondaire pour créer des variations */
+    --primary-secondary-mix: oklch(from var(--primary-500) l calc(c * 0.8) calc(h + 60));
+    --secondary-tertiary-mix: oklch(from var(--secondary-500) l calc(c * 0.8) calc(h + 60));
+    --tertiary-primary-mix: oklch(from var(--tertiary-500) l calc(c * 0.8) calc(h + 60));
+  }
+}
+
+/* ================================================
+   Mode sombre (exemple)
+   Inverse ou ajuste les valeurs
+   ================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Option 1: Inverser les valeurs */
+    /*
+    --surface-lightest: var(--gray-950);
+    --surface-light: var(--gray-900);
+    --surface: var(--gray-800);
+    --surface-dark: var(--gray-700);
+    
+    --text-subtle: var(--gray-600);
+    --text-muted: var(--gray-500);
+    --text: var(--gray-300);
+    --text-strong: var(--gray-50);
+    */
+    
+    /* Option 2: Ajuster la teinte pour le mode sombre */
+    /* --gray-hue: 210; */ /* Légère teinte bleue en mode sombre */
+  }
+}
+
+/* ================================================
+   Exemples de réutilisation pour d'autres palettes
+   ================================================ */
+
+/* Palette de couleurs personnalisée */
+
+.palette-custom {
+  /* Modifier la teinte pour créer une nouvelle palette */
+  --custom-hue: 210; /* Bleu */
+  
+  /* Les variables seront générées automatiquement :
+  --custom-50, --custom-100, --custom-200, etc. */
+}
+
+/* Thème pour l'application */
+
+body {
+  background-color: var(--surface-lightest);
+  color: var(--text);
+}

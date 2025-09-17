@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test des Palettes Triadiques - OKLCH</title>
+    <link rel="stylesheet" href="styles/themes/theme-main-generated.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--surface-lighter);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .palette-section {
+            margin-bottom: 3rem;
+            background: var(--surface-lightest);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .color-swatch {
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            padding: 8px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .color-swatch::before {
+            content: attr(data-color);
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(0,0,0,0.7);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .demo-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .demo-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid;
+        }
+
+        .primary-demo {
+            background-color: var(--primary-bg-subtle);
+            border-color: var(--primary-border);
+            color: var(--primary-text);
+        }
+
+        .secondary-demo {
+            background-color: var(--secondary-bg-subtle);
+            border-color: var(--secondary-border);
+            color: var(--secondary-text);
+        }
+
+        .tertiary-demo {
+            background-color: var(--tertiary-bg-subtle);
+            border-color: var(--tertiary-border);
+            color: var(--tertiary-text);
+        }
+
+        .button-demo {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-darker);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-darker);
+        }
+
+        .btn-tertiary {
+            background-color: var(--tertiary);
+            color: white;
+        }
+
+        .btn-tertiary:hover {
+            background-color: var(--tertiary-darker);
+        }
+
+        .gradient-demo {
+            height: 100px;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .primary-gradient {
+            background: linear-gradient(135deg, var(--primary-300), var(--primary-600));
+        }
+
+        .secondary-gradient {
+            background: linear-gradient(135deg, var(--secondary-300), var(--secondary-600));
+        }
+
+        .tertiary-gradient {
+            background: linear-gradient(135deg, var(--tertiary-300), var(--tertiary-600));
+        }
+
+        .triadic-gradient {
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500), var(--tertiary-500));
+        }
+
+        .split-complementary {
+            --secondary-color-modifier: 150;
+            --tertiary-color-modifier: 210;
+        }
+
+        .complementary {
+            --secondary-color-modifier: 180;
+            --tertiary-color-modifier: 30;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Palettes Triadiques OKLCH</h1>
+        <p>Test des palettes de couleurs secondaire et tertiaire basées sur la théorie des couleurs triadiques</p>
+
+        <!-- Palette Primaire -->
+        <div class="palette-section">
+            <h2>🟦 Palette Primaire (Teal) - Teinte 200°</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background-color: var(--primary-50)" data-color="primary-50"></div>
+                <div class="color-swatch" style="background-color: var(--primary-100)" data-color="primary-100"></div>
+                <div class="color-swatch" style="background-color: var(--primary-200)" data-color="primary-200"></div>
+                <div class="color-swatch" style="background-color: var(--primary-300)" data-color="primary-300"></div>
+                <div class="color-swatch" style="background-color: var(--primary-400)" data-color="primary-400"></div>
+                <div class="color-swatch" style="background-color: var(--primary-500)" data-color="primary-500"></div>
+                <div class="color-swatch" style="background-color: var(--primary-600)" data-color="primary-600"></div>
+                <div class="color-swatch" style="background-color: var(--primary-700)" data-color="primary-700"></div>
+                <div class="color-swatch" style="background-color: var(--primary-800)" data-color="primary-800"></div>
+                <div class="color-swatch" style="background-color: var(--primary-900)" data-color="primary-900"></div>
+                <div class="color-swatch" style="background-color: var(--primary-950)" data-color="primary-950"></div>
+            </div>
+            <div class="primary-gradient gradient-demo"></div>
+        </div>
+
+        <!-- Palette Secondaire -->
+        <div class="palette-section">
+            <h2>🟪 Palette Secondaire (Rose) - Teinte 320° (+120°)</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background-color: var(--secondary-50)" data-color="secondary-50"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-100)" data-color="secondary-100"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-200)" data-color="secondary-200"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-300)" data-color="secondary-300"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-400)" data-color="secondary-400"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-500)" data-color="secondary-500"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-600)" data-color="secondary-600"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-700)" data-color="secondary-700"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-800)" data-color="secondary-800"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-900)" data-color="secondary-900"></div>
+                <div class="color-swatch" style="background-color: var(--secondary-950)" data-color="secondary-950"></div>
+            </div>
+            <div class="secondary-gradient gradient-demo"></div>
+        </div>
+
+        <!-- Palette Tertiaire -->
+        <div class="palette-section">
+            <h2>🟨 Palette Tertiaire (Jaune/Vert) - Teinte 80° (+240°)</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background-color: var(--tertiary-50)" data-color="tertiary-50"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-100)" data-color="tertiary-100"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-200)" data-color="tertiary-200"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-300)" data-color="tertiary-300"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-400)" data-color="tertiary-400"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-500)" data-color="tertiary-500"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-600)" data-color="tertiary-600"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-700)" data-color="tertiary-700"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-800)" data-color="tertiary-800"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-900)" data-color="tertiary-900"></div>
+                <div class="color-swatch" style="background-color: var(--tertiary-950)" data-color="tertiary-950"></div>
+            </div>
+            <div class="tertiary-gradient gradient-demo"></div>
+        </div>
+
+        <!-- Gradient Triadique -->
+        <div class="palette-section">
+            <h2>🌈 Gradient Triadique Complet</h2>
+            <p>Gradient utilisant les trois couleurs principales de la palette triadique</p>
+            <div class="triadic-gradient gradient-demo"></div>
+        </div>
+
+        <!-- Démonstrations d'utilisation -->
+        <div class="palette-section">
+            <h2>💡 Démonstrations d'utilisation</h2>
+            <div class="demo-section">
+                <div class="demo-card primary-demo">
+                    <h3>Carte Primaire</h3>
+                    <p>Ceci est un exemple de carte utilisant la palette primaire avec des tons sarcelle.</p>
+                    <a href="#" class="button-demo btn-primary">Bouton Primaire</a>
+                </div>
+                
+                <div class="demo-card secondary-demo">
+                    <h3>Carte Secondaire</h3>
+                    <p>Ceci est un exemple de carte utilisant la palette secondaire avec des tons rose.</p>
+                    <a href="#" class="button-demo btn-secondary">Bouton Secondaire</a>
+                </div>
+                
+                <div class="demo-card tertiary-demo">
+                    <h3>Carte Tertiaire</h3>
+                    <p>Ceci est un exemple de carte utilisant la palette tertiaire avec des tons jaune/vert.</p>
+                    <a href="#" class="button-demo btn-tertiary">Bouton Tertiaire</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informations techniques -->
+        <div class="palette-section">
+            <h2>ℹ️ Informations Techniques</h2>
+            <h3>Théorie des Couleurs Triadiques</h3>
+            <p>Les palettes triadiques utilisent trois couleurs espacées de 120° sur le cercle chromatique :</p>
+            <ul>
+                <li><strong>Primaire (200°)</strong>: Cyan-bleu (Sarcelle) - Couleur de base</li>
+                <li><strong>Secondaire (320°)</strong>: Rose/Magenta - À 120° de la primaire</li>
+                <li><strong>Tertiaire (80°)</strong>: Jaune/Vert - À 240° de la primaire (ou -120°)</li>
+            </ul>
+            
+            <h3>Utilisation des variables CSS</h3>
+            <p>Chaque palette dispose de :</p>
+            <ul>
+                <li>11 nuances (50-950) avec formules de luminosité et chroma</li>
+                <li>Alias sémantiques (--primary, --secondary, --tertiary)</li>
+                <li>Alias fonctionnels (--bg, --text, --border, --accent)</li>
+                <li>Variations avec couleurs relatives (pastel, accent, muted)</li>
+            </ul>
+
+            <h3>Exemples d'utilisation</h3>
+            <pre><code>/* Utilisation simple */
+.element {
+    background-color: var(--secondary-500);
+    color: var(--secondary-text);
+}
+
+/* Utilisation avec alias sémantique */
+.button {
+    background-color: var(--tertiary-accent);
+    border: 1px solid var(--tertiary-border);
+}
+
+/* Utilisation avec couleurs relatives */
+.custom-element {
+    background-color: var(--secondary-pastel);
+}</code></pre>
+        </div>
+    </div>
+</body>
+</html>

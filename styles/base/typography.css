@@ -7,6 +7,8 @@
 :root {
   --fontFallback: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --robotFlex: 'Roboto Flex', var(--fontFallback);
+
+  
   /** Variables utilisées pour générer les valeurs primitives
   * Petits écrans (<= 500px) : ratio 1.2, base 16px
   * Grands écrans (>= 1240px) : ratio 1.333, base 20px
@@ -47,12 +49,12 @@
     line-height: 1.5;
   }
 
-  :read-only {
+  h1, h2, h3, h4, h5, h6, strong {
     font-variation-settings: "wght" var(--fvs-wght), "wdth" var(--fvs-wdth), "opsz" var(--fvs-opsz), "GRAD" var(--fvs-grad), "slnt" var(--fvs-slnt), "XTRA" var(--fvs-xtra), "XOPQ" var(--fvs-xopq), "YOPQ" var(--fvs-yopq), "YTLC" var(--fvs-ytlc), "YTUC" var(--fvs-ytuc), "YTAS" var(--fvs-ytas), "YTDE" var(--fvs-ytde), "YTFI" var(--fvs-ytfi);
   }
 
   strong {
-    --fvs-wght: 600;
+    --fvs-wght: 540;
   }
   
   .headingUltra {
